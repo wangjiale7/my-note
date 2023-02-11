@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>二叉树 | 生活不止眼前的苟且还有诗和远方</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="不要轻视现在行动的影响力">
+    
+    <link rel="preload" href="/assets/css/0.styles.c1b43c79.css" as="style"><link rel="preload" href="/assets/js/app.e845047f.js" as="script"><link rel="preload" href="/assets/js/2.077ec98f.js" as="script"><link rel="preload" href="/assets/js/91.bb162fd5.js" as="script"><link rel="prefetch" href="/assets/js/10.59cc0eb4.js"><link rel="prefetch" href="/assets/js/100.5b5eddb8.js"><link rel="prefetch" href="/assets/js/101.50c08eda.js"><link rel="prefetch" href="/assets/js/102.d673aba4.js"><link rel="prefetch" href="/assets/js/103.5b4e50e8.js"><link rel="prefetch" href="/assets/js/104.23a2ec53.js"><link rel="prefetch" href="/assets/js/105.f15f3065.js"><link rel="prefetch" href="/assets/js/106.b7e178ef.js"><link rel="prefetch" href="/assets/js/107.02d4ee32.js"><link rel="prefetch" href="/assets/js/108.dc6c292a.js"><link rel="prefetch" href="/assets/js/109.147dfca8.js"><link rel="prefetch" href="/assets/js/11.02927c68.js"><link rel="prefetch" href="/assets/js/110.3f42d500.js"><link rel="prefetch" href="/assets/js/111.8bf9bc96.js"><link rel="prefetch" href="/assets/js/112.341f0a8f.js"><link rel="prefetch" href="/assets/js/113.6f03b7cd.js"><link rel="prefetch" href="/assets/js/114.e276cf6e.js"><link rel="prefetch" href="/assets/js/115.856308e4.js"><link rel="prefetch" href="/assets/js/116.b13d321a.js"><link rel="prefetch" href="/assets/js/12.696cdeab.js"><link rel="prefetch" href="/assets/js/13.bcec989d.js"><link rel="prefetch" href="/assets/js/14.902e100c.js"><link rel="prefetch" href="/assets/js/15.151548b8.js"><link rel="prefetch" href="/assets/js/16.4a99f7ff.js"><link rel="prefetch" href="/assets/js/17.eb548dc9.js"><link rel="prefetch" href="/assets/js/18.6ab42d37.js"><link rel="prefetch" href="/assets/js/19.25c3b6e4.js"><link rel="prefetch" href="/assets/js/20.848a1fdb.js"><link rel="prefetch" href="/assets/js/21.a933877a.js"><link rel="prefetch" href="/assets/js/22.79d9d226.js"><link rel="prefetch" href="/assets/js/23.9e87bdf2.js"><link rel="prefetch" href="/assets/js/24.1097ce77.js"><link rel="prefetch" href="/assets/js/25.4f0cfb0a.js"><link rel="prefetch" href="/assets/js/26.3b0d90da.js"><link rel="prefetch" href="/assets/js/27.78f7ccd2.js"><link rel="prefetch" href="/assets/js/28.2c67b94f.js"><link rel="prefetch" href="/assets/js/29.507b7dba.js"><link rel="prefetch" href="/assets/js/3.7e5c5a77.js"><link rel="prefetch" href="/assets/js/30.a680b984.js"><link rel="prefetch" href="/assets/js/31.8fca0fef.js"><link rel="prefetch" href="/assets/js/32.28a265c3.js"><link rel="prefetch" href="/assets/js/33.6fe9a452.js"><link rel="prefetch" href="/assets/js/34.7034ca89.js"><link rel="prefetch" href="/assets/js/35.dd216b78.js"><link rel="prefetch" href="/assets/js/36.8a059d61.js"><link rel="prefetch" href="/assets/js/37.6ab456b8.js"><link rel="prefetch" href="/assets/js/38.e634fc42.js"><link rel="prefetch" href="/assets/js/39.6cc51a34.js"><link rel="prefetch" href="/assets/js/4.a8531777.js"><link rel="prefetch" href="/assets/js/40.3ef3aea8.js"><link rel="prefetch" href="/assets/js/41.c5490513.js"><link rel="prefetch" href="/assets/js/42.1180b45d.js"><link rel="prefetch" href="/assets/js/43.aac6e20b.js"><link rel="prefetch" href="/assets/js/44.5a83e0f2.js"><link rel="prefetch" href="/assets/js/45.4befd49f.js"><link rel="prefetch" href="/assets/js/46.92d73551.js"><link rel="prefetch" href="/assets/js/47.7f8946da.js"><link rel="prefetch" href="/assets/js/48.79e530d8.js"><link rel="prefetch" href="/assets/js/49.b09f2f0e.js"><link rel="prefetch" href="/assets/js/5.897e7b7c.js"><link rel="prefetch" href="/assets/js/50.80c24b9c.js"><link rel="prefetch" href="/assets/js/51.b167d1c5.js"><link rel="prefetch" href="/assets/js/52.46586876.js"><link rel="prefetch" href="/assets/js/53.4805002f.js"><link rel="prefetch" href="/assets/js/54.a40f1a5c.js"><link rel="prefetch" href="/assets/js/55.17daef30.js"><link rel="prefetch" href="/assets/js/56.32ec2e7d.js"><link rel="prefetch" href="/assets/js/57.810c8fa3.js"><link rel="prefetch" href="/assets/js/58.2cb932aa.js"><link rel="prefetch" href="/assets/js/59.0f6b6a99.js"><link rel="prefetch" href="/assets/js/6.ed96a0d7.js"><link rel="prefetch" href="/assets/js/60.a80ed851.js"><link rel="prefetch" href="/assets/js/61.cda08511.js"><link rel="prefetch" href="/assets/js/62.52920c25.js"><link rel="prefetch" href="/assets/js/63.901c19c4.js"><link rel="prefetch" href="/assets/js/64.06dec477.js"><link rel="prefetch" href="/assets/js/65.6c57ebee.js"><link rel="prefetch" href="/assets/js/66.d0d389ca.js"><link rel="prefetch" href="/assets/js/67.0612cc2d.js"><link rel="prefetch" href="/assets/js/68.46339038.js"><link rel="prefetch" href="/assets/js/69.069135b6.js"><link rel="prefetch" href="/assets/js/7.a4c8bb6b.js"><link rel="prefetch" href="/assets/js/70.ad88e007.js"><link rel="prefetch" href="/assets/js/71.474d09cd.js"><link rel="prefetch" href="/assets/js/72.3eff8a99.js"><link rel="prefetch" href="/assets/js/73.63cdb46a.js"><link rel="prefetch" href="/assets/js/74.ea1ba53b.js"><link rel="prefetch" href="/assets/js/75.cc5686d1.js"><link rel="prefetch" href="/assets/js/76.49299c44.js"><link rel="prefetch" href="/assets/js/77.24d3f5d4.js"><link rel="prefetch" href="/assets/js/78.3563137c.js"><link rel="prefetch" href="/assets/js/79.1ef2a400.js"><link rel="prefetch" href="/assets/js/8.4f1ef444.js"><link rel="prefetch" href="/assets/js/80.685934b5.js"><link rel="prefetch" href="/assets/js/81.9509e633.js"><link rel="prefetch" href="/assets/js/82.a8899424.js"><link rel="prefetch" href="/assets/js/83.bd6e7978.js"><link rel="prefetch" href="/assets/js/84.c805f306.js"><link rel="prefetch" href="/assets/js/85.a9f41b11.js"><link rel="prefetch" href="/assets/js/86.fac64d6f.js"><link rel="prefetch" href="/assets/js/87.5aa2bed9.js"><link rel="prefetch" href="/assets/js/88.46b9878b.js"><link rel="prefetch" href="/assets/js/89.5810a936.js"><link rel="prefetch" href="/assets/js/9.36de91fa.js"><link rel="prefetch" href="/assets/js/90.f953def3.js"><link rel="prefetch" href="/assets/js/92.aef870f5.js"><link rel="prefetch" href="/assets/js/93.f20e78f7.js"><link rel="prefetch" href="/assets/js/94.95f96e51.js"><link rel="prefetch" href="/assets/js/95.c038ec97.js"><link rel="prefetch" href="/assets/js/96.4efdacce.js"><link rel="prefetch" href="/assets/js/97.28dc5332.js"><link rel="prefetch" href="/assets/js/98.b5fe1af4.js"><link rel="prefetch" href="/assets/js/99.c44e7632.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c1b43c79.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">生活不止眼前的苟且还有诗和远方</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/qian-duan-gong-cheng-hua/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><a href="/datastructure/" class="nav-link router-link-active">
+  Data Structure
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/linux/" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/wheel/" class="nav-link">
+  Wheel
+</a></div><div class="nav-item"><a href="https://github.com/wangjiale7" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/qian-duan-gong-cheng-hua/" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><a href="/datastructure/" class="nav-link router-link-active">
+  Data Structure
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/linux/" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/wheel/" class="nav-link">
+  Wheel
+</a></div><div class="nav-item"><a href="https://github.com/wangjiale7" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/datastructure/" aria-current="page" class="sidebar-link">参考资料</a></li><li><a href="/datastructure/zhan.html" class="sidebar-link">栈</a></li><li><a href="/datastructure/dui-lie.html" class="sidebar-link">队列</a></li><li><a href="/datastructure/lian-biao.html" class="sidebar-link">链表</a></li><li><a href="/datastructure/shu-jie-gou.html" class="sidebar-link">树</a></li><li><a href="/datastructure/er-cha-shu.html" aria-current="page" class="active sidebar-link">二叉树</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/datastructure/er-cha-shu.html#存储方式" class="sidebar-link">存储方式</a></li><li class="sidebar-sub-header"><a href="/datastructure/er-cha-shu.html#二叉搜索树" class="sidebar-link">二叉搜索树</a></li><li class="sidebar-sub-header"><a href="/datastructure/er-cha-shu.html#二叉树遍历" class="sidebar-link">二叉树遍历</a></li><li class="sidebar-sub-header"><a href="/datastructure/er-cha-shu.html#二叉树类完整封装" class="sidebar-link">二叉树类完整封装</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="二叉树"><a href="#二叉树" class="header-anchor">#</a> 二叉树</h1> <h2 id="存储方式"><a href="#存储方式" class="header-anchor">#</a> 存储方式</h2> <p>使用链表
+<img src="https://gitee.com/ahuntsun/BlogImgs/raw/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%A0%91%E4%B8%80/14.png">
+二叉树最常见的存储方式为链表：每一个节点封装成一个 Node，Node 中包含存储的数据、左节点的引用和右节点的引用。</p> <h2 id="二叉搜索树"><a href="#二叉搜索树" class="header-anchor">#</a> 二叉搜索树</h2> <p>二叉搜索树（BST，Binary Search Tree），也称为二叉排序树和二叉查找树。
+有以下性质</p> <ul><li>非空左子树的所有键值小于其根节点的键值</li> <li>非空右子树的所有键值大于其根节点的键值</li> <li>左、右子树本身也都是二叉搜索树；</li></ul> <h3 id="应用举例"><a href="#应用举例" class="header-anchor">#</a> 应用举例</h3> <img src="https://gitee.com/ahuntsun/BlogImgs/raw/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%A0%91%E4%B8%80/16.png"> <p>若想在其中查找数据 10，只需要查找 4 次，查找效率非常高。</p> <ul><li>第 1 次：将 10 与根节点 9 进行比较，由于 10 &gt; 9，所以 10 下一步与根节点 9 的右子节点 13 比较；</li> <li>第 2 次：由于 10 &lt; 13，所以 10 下一步与父节点 13 的左子节点 11 比较；</li> <li>第 3 次：由于 10 &lt; 11，所以 10 下一步与父节点 11 的左子节点 10 比较；</li> <li>第 4 次：由于 10 = 10，最终查找到数据 10</li></ul> <h2 id="二叉树遍历"><a href="#二叉树遍历" class="header-anchor">#</a> 二叉树遍历</h2> <ul><li>先序遍历； 根左右</li> <li>中序遍历； 左根右</li> <li>后序遍历； 左右根</li></ul> <p>图解，分析过程
+<img src="/assets/Snipaste_2022-09-05_00-23-30.png"></p> <h2 id="二叉树类完整封装"><a href="#二叉树类完整封装" class="header-anchor">#</a> 二叉树类完整封装</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//封装二叉搜索树</span>
+<span class="token keyword">function</span> <span class="token function">BinarySearchTree</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">//节点内部类</span>
+  <span class="token keyword">function</span> <span class="token function">Node</span><span class="token punctuation">(</span><span class="token parameter">key</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>key <span class="token operator">=</span> key
+    <span class="token keyword">this</span><span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token keyword">null</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token keyword">null</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">//属性</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>root <span class="token operator">=</span> <span class="token keyword">null</span>
+
+  <span class="token comment">//方法</span>
+  <span class="token comment">//一.插入数据：insert方法:对外向用户暴露的方法</span>
+  <span class="token class-name">BinarySearchTree</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">insert</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">key</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//1.根据key创建节点</span>
+    <span class="token keyword">let</span> newNode <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Node</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span>
+
+    <span class="token comment">//2.判断根节点是否存在</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>root <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>root <span class="token operator">=</span> newNode
+      <span class="token comment">//根节点存在时</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">insertNode</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>root<span class="token punctuation">,</span> newNode<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">//内部使用的insertNode方法:用于比较节点从左边插入还是右边插入</span>
+  <span class="token class-name">BinarySearchTree</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">insertNode</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">node<span class="token punctuation">,</span> newNode</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//当newNode.key &lt; node.key向左查找</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>newNode<span class="token punctuation">.</span>key <span class="token operator">&lt;</span> node<span class="token punctuation">.</span>key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">//情况1：node无左子节点，直接插入</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>node<span class="token punctuation">.</span>left <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        node<span class="token punctuation">.</span>left <span class="token operator">=</span> newNode
+        <span class="token comment">//情况2：node有左子节点，递归调用insertNode(),直到遇到无左子节点成功插入newNode后，不再符合该情况，也就不再调用insertNode()，递归停止。</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">insertNode</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">,</span> newNode<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+      <span class="token comment">//当newNode.key &gt;= node.key向右查找</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token comment">//情况1：node无右子节点，直接插入</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>node<span class="token punctuation">.</span>right <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        node<span class="token punctuation">.</span>right <span class="token operator">=</span> newNode
+        <span class="token comment">//情况2：node有右子节点，依然递归调用insertNode(),直到遇到无右子节点成功插入newNode为止</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">insertNode</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">,</span> newNode<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">//二.树的遍历</span>
+  <span class="token comment">//1.先序遍历</span>
+  <span class="token comment">//掺入一个handler函数对得到的key进行处理</span>
+  <span class="token class-name">BinarySearchTree</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">preOrderTraversal</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">handler</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">preOrderTraversalNode</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>root<span class="token punctuation">,</span> handler<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">//封装内部方法，对某个节点进行遍历</span>
+  <span class="token class-name">BinarySearchTree</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">preOrderTraversalNode</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">node<span class="token punctuation">,</span> handler</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>node <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">//1.处理经过的节点</span>
+      <span class="token function">handler</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>key<span class="token punctuation">)</span>
+
+      <span class="token comment">//2.遍历经过节点的左子节点</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">preOrderTraversalNode</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">,</span> handler<span class="token punctuation">)</span>
+
+      <span class="token comment">//3.遍历经过节点的右子节点</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">preOrderTraversalNode</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">,</span> handler<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">//2.中序遍历</span>
+  <span class="token class-name">BinarySearchTree</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">midOrderTraversal</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">handler</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">midOrderTraversalNode</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>root<span class="token punctuation">,</span> handler<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token class-name">BinarySearchTree</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">midOrderTraversalNode</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">node<span class="token punctuation">,</span> handler</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>node <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">//1.遍历左子树中的节点</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">midOrderTraversalNode</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">,</span> handler<span class="token punctuation">)</span>
+
+      <span class="token comment">//2.处理节点</span>
+      <span class="token function">handler</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>key<span class="token punctuation">)</span>
+
+      <span class="token comment">//3.遍历右子树中的节点</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">midOrderTraversalNode</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">,</span> handler<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">//3.后序遍历</span>
+  <span class="token class-name">BinarySearchTree</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">postOrderTraversal</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">handler</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">postOrderTraversalNode</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>root<span class="token punctuation">,</span> handler<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token class-name">BinarySearchTree</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">postOrderTraversalNode</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">node<span class="token punctuation">,</span> handler</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>node <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">//1.遍历左子树中的节点</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">postOrderTraversalNode</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">,</span> handler<span class="token punctuation">)</span>
+
+      <span class="token comment">//2.遍历右子树中的节点</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">postOrderTraversalNode</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">,</span> handler<span class="token punctuation">)</span>
+
+      <span class="token comment">//3.处理节点</span>
+      <span class="token function">handler</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>key<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">//三.寻找最值</span>
+  <span class="token comment">//寻找最大值</span>
+  <span class="token class-name">BinarySearchTree</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">max</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//1.获取根节点</span>
+    <span class="token keyword">let</span> node <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>root
+    <span class="token comment">//2.定义key保存节点值</span>
+    <span class="token keyword">let</span> key <span class="token operator">=</span> <span class="token keyword">null</span>
+    <span class="token comment">//3.依次向右不断查找，直到节点为null</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>node <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      key <span class="token operator">=</span> node<span class="token punctuation">.</span>key
+      node <span class="token operator">=</span> node<span class="token punctuation">.</span>right
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> key
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">//寻找最小值</span>
+  <span class="token class-name">BinarySearchTree</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">min</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//1.获取根节点</span>
+    <span class="token keyword">let</span> node <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>root
+    <span class="token comment">//2.定义key保存节点值</span>
+    <span class="token keyword">let</span> key <span class="token operator">=</span> <span class="token keyword">null</span>
+    <span class="token comment">//3.依次向左不断查找，直到节点为null</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>node <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      key <span class="token operator">=</span> node<span class="token punctuation">.</span>key
+      node <span class="token operator">=</span> node<span class="token punctuation">.</span>left
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> key
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">//查找特定的key</span>
+  <span class="token class-name">BinarySearchTree</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">search</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">key</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//1.获取根节点</span>
+    <span class="token keyword">let</span> node <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>root
+
+    <span class="token comment">//2.循环搜索key</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>node <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>key <span class="token operator">&lt;</span> node<span class="token punctuation">.</span>key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//小于根(父)节点就往左边找</span>
+        node <span class="token operator">=</span> node<span class="token punctuation">.</span>left
+        <span class="token comment">//大于根(父)节点就往右边找</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>key <span class="token operator">&gt;</span> node<span class="token punctuation">.</span>key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        node <span class="token operator">=</span> node<span class="token punctuation">.</span>right
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">//四.删除节点</span>
+  <span class="token class-name">BinarySearchTree</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">remove</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">key</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">/*------------------------------1.寻找要删除的节点---------------------------------*/</span>
+    <span class="token comment">//1.1.定义变量current保存删除的节点，parent保存它的父节点。isLeftChild保存current是否为parent的左节点</span>
+    <span class="token keyword">let</span> current <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>root
+    <span class="token keyword">let</span> parent <span class="token operator">=</span> <span class="token keyword">null</span>
+    <span class="token keyword">let</span> isLeftChild <span class="token operator">=</span> <span class="token boolean">true</span>
+
+    <span class="token comment">//1.2.开始寻找删除的节点</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>current<span class="token punctuation">.</span>key <span class="token operator">!=</span> key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      parent <span class="token operator">=</span> current
+      <span class="token comment">// 小于则往左查找</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>key <span class="token operator">&lt;</span> current<span class="token punctuation">.</span>key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        isLeftChild <span class="token operator">=</span> <span class="token boolean">true</span>
+        current <span class="token operator">=</span> current<span class="token punctuation">.</span>left
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        isLeftChild <span class="token operator">=</span> <span class="token boolean">false</span>
+        current <span class="token operator">=</span> current<span class="token punctuation">.</span>right
+      <span class="token punctuation">}</span>
+      <span class="token comment">//找到最后依然没有找到相等的节点</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>current <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">//结束while循环后：current.key = key</span>
+
+    <span class="token comment">/*------------------------------2.根据对应情况删除节点------------------------------*/</span>
+    <span class="token comment">//情况1：删除的是叶子节点(没有子节点)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>current<span class="token punctuation">.</span>left <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> current<span class="token punctuation">.</span>right <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>current <span class="token operator">==</span> <span class="token keyword">this</span><span class="token punctuation">.</span>root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>root <span class="token operator">=</span> <span class="token keyword">null</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>isLeftChild<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        parent<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token keyword">null</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        parent<span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token keyword">null</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">//情况2：删除的节点有一个子节点</span>
+    <span class="token comment">//当current存在左子节点时</span>
+    <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>current<span class="token punctuation">.</span>right <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>current <span class="token operator">==</span> <span class="token keyword">this</span><span class="token punctuation">.</span>root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>root <span class="token operator">=</span> current<span class="token punctuation">.</span>left
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>isLeftChild<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        parent<span class="token punctuation">.</span>left <span class="token operator">=</span> current<span class="token punctuation">.</span>left
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        parent<span class="token punctuation">.</span>right <span class="token operator">=</span> current<span class="token punctuation">.</span>left
+      <span class="token punctuation">}</span>
+      <span class="token comment">//当current存在右子节点时</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>current<span class="token punctuation">.</span>left <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>current <span class="token operator">==</span> <span class="token keyword">this</span><span class="token punctuation">.</span>root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>root <span class="token operator">=</span> current<span class="token punctuation">.</span>right
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>isLeftChild<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        parent<span class="token punctuation">.</span>left <span class="token operator">=</span> current<span class="token punctuation">.</span>right
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        parent<span class="token punctuation">.</span>right <span class="token operator">=</span> current<span class="token punctuation">.</span>right
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">//情况3：删除的节点有两个子节点</span>
+    <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token comment">//1.获取后继节点</span>
+      <span class="token keyword">let</span> successor <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getSuccessor</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span>
+
+      <span class="token comment">//2.判断是否根节点</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>current <span class="token operator">==</span> <span class="token keyword">this</span><span class="token punctuation">.</span>root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>root <span class="token operator">=</span> successor
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>isLeftChild<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        parent<span class="token punctuation">.</span>left <span class="token operator">=</span> successor
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        parent<span class="token punctuation">.</span>right <span class="token operator">=</span> successor
+      <span class="token punctuation">}</span>
+
+      <span class="token comment">//3.将后继的左子节点改为被删除节点的左子节点</span>
+      successor<span class="token punctuation">.</span>left <span class="token operator">=</span> current<span class="token punctuation">.</span>left
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">//封装查找后继的方法</span>
+  <span class="token class-name">BinarySearchTree</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">getSuccessor</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">delNode</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//1.定义变量,保存找到的后继</span>
+    <span class="token keyword">let</span> successor <span class="token operator">=</span> delNode
+    <span class="token keyword">let</span> current <span class="token operator">=</span> delNode<span class="token punctuation">.</span>right
+    <span class="token keyword">let</span> successorParent <span class="token operator">=</span> delNode
+
+    <span class="token comment">//2.循环查找current的右子树节点</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>current <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      successorParent <span class="token operator">=</span> successor
+      successor <span class="token operator">=</span> current
+      current <span class="token operator">=</span> current<span class="token punctuation">.</span>left
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">//3.判断寻找到的后继节点是否直接就是删除节点的right节点</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>successor <span class="token operator">!=</span> delNode<span class="token punctuation">.</span>right<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      successorParent<span class="token punctuation">.</span>left <span class="token operator">=</span> successor<span class="token punctuation">.</span>right
+      successor<span class="token punctuation">.</span>right <span class="token operator">=</span> delNode<span class="token punctuation">.</span>right
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> successor
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/datastructure/shu-jie-gou.html" class="prev">
+        树
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e845047f.js" defer></script><script src="/assets/js/2.077ec98f.js" defer></script><script src="/assets/js/91.bb162fd5.js" defer></script>
+  </body>
+</html>
